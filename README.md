@@ -22,6 +22,8 @@
 - Current codes deployed on the [computing engine](https://console.cloud.google.com/compute/instancesDetail/zones/asia-east1-a/instances/gogobot-log-api?project=gogox-data-science-non-prod)
 - How can I access db? please refer to the [page](https://www.notion.so/Access-gogobot-log-db-only-for-GoGoBot-CS-plan-B-6f1b38ea492a491cbf27b676e66be5ed)
 - DB username/password: Please logon computing engine and check the content of `/home/fuming_tsai/FastAPIDemo/docker-compose.yml`.
+- [Projet AVA schedule](https://docs.google.com/spreadsheets/d/1TUkFm_ZDR2k1vKFC8rxsqYSQf2sNAHC1YHmXP8qAy5Y/edit#gid=0)
+
 ### flink
 - Github repo URL: https://github.com/gogovan/gogovan-analytics-flink
 - Current status: deployed
