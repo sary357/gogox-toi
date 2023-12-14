@@ -29,4 +29,9 @@
 - Current status: deployed
 - Current `deployment branch`: master branch
 - My understanding
-  - [Data flow](https://console.cloud.google.com/dataflow/jobs?referrer=search&project=gogox-data-science-non-prod) -> flink -> [redis](https://console.cloud.google.com/memorystore/redis/locations/us-central1/instances/datateam/details/overview?project=gogox-data-science-non-prod)
+  - [Data flow](https://console.cloud.google.com/dataflow/jobs?referrer=search&project=gogox-data-science-non-prod) -> [flink](https://github.com/gogovan/gogovan-analytics-flink) -> [redis](https://console.cloud.google.com/memorystore/redis/locations/us-central1/instances/datateam/details/overview?project=gogox-data-science-non-prod)
+  - In data flow, there are `2` jobs
+    - `datateam-stream-prod-bigquery-YYYYMMDD-HHMMSS`: this is deployed by [gogovan-analytics-automation](https://github.com/gogovan/gogovan-analytics-automation/tree/master/dataflow)
+    - `datateam-stream-prod-pubsub-YYYYMMDD-HHMMSS`: this will be deployed by [gogovan-analytics-automation](https://github.com/gogovan/gogovan-analytics-automation/tree/master/dataflow)
+  - In redis, there is only 1 instance called `datateam`.
+- [watchdog](https://github.com/gogovan/gogovan-analytics-flink/tree/master/watchdog): it monitors the status of flink jobs. If the job is not running, it will restart the job.
