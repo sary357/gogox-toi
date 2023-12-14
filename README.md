@@ -37,4 +37,11 @@
 - [watchdog](https://github.com/gogovan/gogovan-analytics-flink/tree/master/watchdog): it monitors the status of flink jobs. If the job is not running, it will restart the job.
 
 ## Infra team part
-### gogobot-log-api
+### dockerhub-vul-report
+- Objective: to report the vulnerability of dockerhub images. In fact, it parse the report from dockerhub, save the report to the GCS, then send the report to slack channel.
+- Github repo URL: https://github.com/gogovan/gogovan-devops/tree/develop/dockerfiles/gogox-public-image/dockerhub-vul-report
+- slack channel: #alert-dockerhub
+
+### sequence_number_fix
+- Objective: to fix the sequence number issue in the database. It's a temporary solution. These scripts can compare max id and sequence number. Ideally, they were only necessary when migrating from AWS to GCP. Hope we don't need them anymore.
+- Github repo URL: https://github.com/gogovan/gogovan-devops/tree/develop/script/GCP/sequence_number_fix
