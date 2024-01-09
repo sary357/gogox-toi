@@ -18,7 +18,7 @@
 - Current status:
   - v1: deprecated
   - v2: deployed on the computing engine
-- Current `tag` version: [v0.3.0](https://github.com/sary357/FastAPIDemo/releases/tag/v0.3.0)
+- Current `tag` version: [v0.3.1](https://github.com/sary357/FastAPIDemo/releases/tag/v0.3.1)
 - Current codes deployed on the [computing engine](https://console.cloud.google.com/compute/instancesDetail/zones/asia-east1-a/instances/gogobot-log-api?project=gogox-data-science-non-prod)
 - How can I access db? please refer to the [page](https://www.notion.so/Access-gogobot-log-db-only-for-GoGoBot-CS-plan-B-6f1b38ea492a491cbf27b676e66be5ed)
 - DB username/password: Please logon computing engine and check the content of `/home/fuming_tsai/FastAPIDemo/docker-compose.yml`.
