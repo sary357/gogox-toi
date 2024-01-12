@@ -13,12 +13,16 @@
 - Description: sample codes for gin framework. It's a good reference for the new project. For more information, please check the [README.md](https://github.com/gogovan/gogovan-gin-sample-codes/blob/main/README.md)
 
 ## Data engineering part
+### superset
+- Just keep in mind: Someone from business team may need to access superset. Please help them to create an account.
+- Github repo URL: https://github.com/gogovan/incubator-superset (We have our own customized version)
+
 ### gogobot-log-api
 - Github repo URL: https://github.com/sary357/FastAPIDemo
 - Current status:
   - v1: deprecated
   - v2: deployed on the computing engine
-- Current `tag` version: [v0.3.1](https://github.com/sary357/FastAPIDemo/releases/tag/v0.3.1)
+- Current `tag` version: [v0.3.2](https://github.com/sary357/FastAPIDemo/releases/tag/v0.3.2)
 - Current codes deployed on the [computing engine](https://console.cloud.google.com/compute/instancesDetail/zones/asia-east1-a/instances/gogobot-log-api?project=gogox-data-science-non-prod)
 - How can I access db? please refer to the [page](https://www.notion.so/Access-gogobot-log-db-only-for-GoGoBot-CS-plan-B-6f1b38ea492a491cbf27b676e66be5ed)
 - DB username/password: Please logon computing engine and check the content of `/home/fuming_tsai/FastAPIDemo/docker-compose.yml`.
