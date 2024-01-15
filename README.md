@@ -39,6 +39,10 @@
     - `datateam-stream-prod-pubsub-YYYYMMDD-HHMMSS`: this will be deployed by [gogovan-analytics-automation](https://github.com/gogovan/gogovan-analytics-automation/tree/master/dataflow)
   - In GCP MemoryStore, there is only 1 redis instance called `datateam`.
 - [watchdog](https://github.com/gogovan/gogovan-analytics-flink/tree/master/watchdog): it monitors the status of flink jobs. If the job is not running, it will restart the job.
+### accounts
+- bq-test-user@gogox.com
+  - vault path: https://vault-v2.gogo.tech/ui/vault/secrets/gogotech/show/data_team/user_accounts/bq-test-user@gogox.com
+  - description: This account is used for us to set up the connection between Google play and [App annie](https://www.data.ai/account/login). 
 
 ## Infra team part
 ### dockerhub-vul-report
