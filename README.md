@@ -42,6 +42,21 @@
 - [watchdog](https://github.com/gogovan/gogovan-analytics-flink/tree/master/watchdog): it monitors the status of flink jobs. If the job is not running, it will restart the job.
 - [Google case](https://console.cloud.google.com/support/cases/detail/v2/48878269?project=gogox-data-science-non-prod): Google engineers are still investigating the issue. 
 - Discussion slack channel: #streaming-data-processing
+
+### DE-1129 (data-access-tool)
+- When we or HK data analytics team use [data-access-tool](https://github.com/gogovan/data-access-tool) but get an error message like
+```
+Access Denied: BigQuery BigQuery: Error getting metadata for external code resource, 
+please verify you have provided a valid path and/or that you have access to the 
+resource: gs://gogox-analytics/bigquery/udf/wkx.js
+```
+- That means the user doesn't have the permission to access the bucket `gs://gogox-analytics/bigquery/`. What we will going to do is to grant the permission to the user.
+  - Step 1: [Grant the permission](hhttps://console.cloud.google.com/storage/browser/ggx-analytics;tab=objects?forceOnBucketsSortingFiltering=true&project=gogox-data-science-non-prod) to the user.
+  - Step 2: choose the tab `PERMISSIONS` and click `GRANT ACCESS`.
+    - Add principals: Please fill the user who encounters the issue.
+    - Assign roles: please choose `Storage Object Viewer`.
+    - Click `SAVE`.
+
 ### accounts
 - bq-test-user@gogox.com
   - vault path: https://vault-v2.gogo.tech/ui/vault/secrets/gogotech/show/data_team/user_accounts/bq-test-user@gogox.com
