@@ -40,6 +40,11 @@
     - `datateam-stream-prod-pubsub-YYYYMMDD-HHMMSS`: this will be deployed by [gogovan-analytics-automation](https://github.com/gogovan/gogovan-analytics-automation/tree/master/dataflow)
   - In GCP MemoryStore, there is only 1 redis instance called `datateam`.
 - [watchdog](https://github.com/gogovan/gogovan-analytics-flink/tree/master/watchdog): it monitors the status of flink jobs. If the job is not running, it will restart the job.
+  - if watchdog found the job is not running, it will restart the job and send an error message to slack channel: `#alert_gamification`. the error message looks like
+```
+[flink job watchdog] No running jobs. I'm going to submit jobs soon.
+[flink job watchdog] jobs are running correctly.
+```
 - [Google case](https://console.cloud.google.com/support/cases/detail/v2/48878269?project=gogox-data-science-non-prod): Google engineers are still investigating the issue. 
 - Discussion slack channel: #streaming-data-processing
 
