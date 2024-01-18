@@ -51,7 +51,7 @@ please verify you have provided a valid path and/or that you have access to the
 resource: gs://gogox-analytics/bigquery/udf/wkx.js
 ```
 - That means the user doesn't have the permission to access the bucket `gs://gogox-analytics/bigquery/`. What we will going to do is to grant the permission to the user.
-  - Step 1: [Grant the permission](https://console.cloud.google.com/storage/browser/ggx-analytics;tab=objects?forceOnBucketsSortingFiltering=true&project=gogox-data-science-non-prod) to the user.
+  - Step 1: [Go to GCS bucket page](https://console.cloud.google.com/storage/browser/ggx-analytics;tab=objects?forceOnBucketsSortingFiltering=true&project=gogox-data-science-non-prod) to the user.
   - Step 2: choose the tab `PERMISSIONS` and click `GRANT ACCESS`.
     - Add principals: Please fill the user who encounters the issue.
     - Assign roles: please choose `Storage Object Viewer`.
