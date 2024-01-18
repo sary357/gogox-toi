@@ -80,6 +80,6 @@ resource: gs://gogox-analytics/bigquery/udf/wkx.js
 - Github repo URL: https://github.com/gogovan/gogovan-devops/tree/develop/script/GCP/sequence_number_fix
 
 ## Mobile team part
-- regular record down crash rate. What I have been doing is to record down the crash rate every week. 
+- What I have been doing is to record down the crash rate of GoGoX CA DA `every Monday`. 
   - firebase crashlytics: https://console.firebase.google.com/project/api-project-1004752207173/crashlytics/app/ios:hk.gogovan.GoGoVanClient/issues?utm_campaign=extensions&utm_medium=SLACK&utm_source=VELOCITY_ISSUE&state=open&time=last-seven-days&types=crash&tag=all&sort=eventCount
   - [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1ErbjelUmC6C8Nlo-Sxep4NH7GmJsT_E752fZiI5s5Qo/edit#gid=1294344438)
